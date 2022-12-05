@@ -1448,6 +1448,21 @@
 
     <profiles>
         <profile>
+            <id>tableau</id>
+            <distributionManagement>
+                <repository>
+                    <id>tableau-artifactory</id>
+                    <name>Artifactory Production Server-releases</name>
+                    <url>https://artifactory.prod.tableautools.com/artifactory/ext-release-local</url>
+                </repository>
+                <snapshotRepository>
+                    <id>tableau-artifactory</id>
+                    <name>Artifactory Production Server-snapshots</name>
+                    <url>https://artifactory.prod.tableautools.com/artifactory/ext-snapshot-local</url>
+                </snapshotRepository>
+            </distributionManagement>
+        </profile>
+        <profile>
             <id>java-11</id>
             <properties>
                 <compiler.source>11</compiler.source>
